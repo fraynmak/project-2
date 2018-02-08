@@ -4,29 +4,59 @@
 	box-sizing: border-box;
 }
 
+html,body,header {
+	min-height: 100%;
+	height: 100%;
+}
+
 body {
-	font-family: 'Roboto', sans-serif;
-	font-size: 16px;
+	font-family: 'Roboto', sans-serif,Baron Neue,"Helvetica Neue",Helvetica,Arial;
+	font-size: 24px;
 	line-height: 3.2em;
 	font-weight: 900;
+
 }
 
 header {
-	padding: 3em 8em;
+	box-sizing: content-box;
+	width: 100%;
+	font-family: Baron Neue,"Helvetica Neue",Helvetica,Arial;
+	text-transform: uppercase;
+	padding: 3em 5em;
 	background: #36D1DC;  
 	background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to right, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 }
 
 nav {
 	margin: 0 auto;
 }
-nav ul li {
+
+
+nav .menu {
 	display: inline;
 	display: none;
 }
- 
+
+a {
+	display: inline-block;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.8em;
+}
+
+a:hover, a:visited, a:link, a:active {
+	text-decoration: none;
+	color: white;
+	width: 70%;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+
 h1.intro1 {
 	font-size: 2em;
 	color: white;
@@ -37,7 +67,7 @@ h1.intro2 {
 }
 
 span#name {
-	font-size: 50px;
+	font-size: 2.2em;
 	font-weight: bolder;
 	color: white;
 }
@@ -46,3 +76,14 @@ span#influencer {
 	text-decoration: line-through;
 	color: rgba(237, 233, 238, 0.8);
 }
+
+.material-icons.md-48 { 
+	font-size: 3em;
+	width: 60%;  
+	color: black;
+ }
+
+
+
+
+
