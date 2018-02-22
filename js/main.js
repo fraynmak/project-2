@@ -8,6 +8,7 @@ $(document).ready( function() {
     hamburger.toggleClass("is-active");
 
     // Do something else, like open/close menu
-    $('div').toggle('.open-menu');
-});
+    $('div.menu').toggle('.open-menu');
+    $('div#introduction').hide('#introduction');
+	});
 });
