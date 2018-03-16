@@ -10,5 +10,24 @@ $(document).ready( function() {
     // Do something else, like open/close menu
     $('div.menu').toggle('.open-menu');
     $('div#introduction').hide('#introduction');
-	});
+//data-state hide&show 
+	if ($('#introduction').data('state') === 'hidden') {
+
+		$('#introduction').data('state','show');
+
+		$('#introduction').slideDown();
+} else {
+	$('#introduction').data('state','hidden');
+	$('#introduction').hide();
+}
+});
+
+$('.carousel').carousel();
+$('.carousel').carousel({
+  interval: 2000
+})
+$('#myCarousel').on('slide.bs.carousel', function () {
+  // do something…
+})
+
 });
